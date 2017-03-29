@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="less">
-  @import url('../static/markdown.less');
+  @import url('./static/markdown.less');
   html,
   body {
     margin: 0;

@@ -1,7 +1,7 @@
 <template>
 	<div class="menu">
 		<h1>
-			<img src="../../img/logo.png" alt="">
+			<img src="../img/logo.png" alt="">
 		</h1>
 		<ul class="files">
 			<template v-for='i in articleList.length'>
