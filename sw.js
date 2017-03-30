@@ -6,10 +6,10 @@ var cacheList = [
   '/sw.js',
   "index.html",
   "dist/build.js",
-  'http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css',
-  'http://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3',
-  'http://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3',
-  'http://cdn.bootcss.com/highlight.js/9.7.0/styles/atom-one-dark.min.css'
+  'https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css',
+  'https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3',
+  'https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3',
+  'https://cdn.bootcss.com/highlight.js/9.7.0/styles/atom-one-dark.min.css'
 ]
 
 self.addEventListener('install', function(e) {
