@@ -1,5 +1,5 @@
 console.log('Script loaded!')
-var cacheStorageKey = 'markcook-2'
+var cacheStorageKey = 'markcook-3'
 
 var cacheList = [
   '/',
