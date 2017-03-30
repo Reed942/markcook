@@ -3,7 +3,6 @@ var cacheStorageKey = 'markcook-2'
 
 var cacheList = [
   '/',
-  '/sw.js',
   "index.html",
   "dist/build.js",
   'https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css',
