@@ -1,8 +1,9 @@
 console.log('Script loaded!')
-const cacheStorageKey = '0.0.3'
+const cacheStorageKey = '0.0.4'
 
 const cacheList = [
   '/',
+  '/markcook',
   "index.html",
   "dist/build.js",
   'https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css',
