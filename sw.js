@@ -1,7 +1,7 @@
 console.log('Script loaded!')
-var cacheStorageKey = 'markcook-3'
+const cacheStorageKey = '0.0.3'
 
-var cacheList = [
+const cacheList = [
   '/',
   "index.html",
   "dist/build.js",
@@ -11,20 +11,20 @@ var cacheList = [
   'https://cdn.bootcss.com/highlight.js/9.7.0/styles/atom-one-dark.min.css'
 ]
 
-self.addEventListener('install', function(e) {
+self.addEventListener('install', (e) => {
   console.log('Cache event!')
   e.waitUntil(
-    caches.open(cacheStorageKey).then(function(cache) {
+    caches.open(cacheStorageKey).then((cache) => {
       console.log('Adding to Cache:', cacheList)
       return cache.addAll(cacheList)
-    }).then(function() {
+    }).then(() => {
       console.log('Skip waiting!')
       return self.skipWaiting()
     })
   )
 })
 
-self.addEventListener('activate', function(e) {
+self.addEventListener('activate', (e) => {
   console.log('Activate event')
   e.waitUntil(
     Promise.all([
@@ -40,9 +40,9 @@ self.addEventListener('activate', function(e) {
   )
 })
 
-self.addEventListener('fetch', function(e) {
+self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then(function(response) {
+    caches.match(e.request).then((response) => {
       if (response != null) {
         console.log('Using cache for:', e.request.url)
         return response
